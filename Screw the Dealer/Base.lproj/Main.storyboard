@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wmU-ZN-9c8">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StartVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartVC" customModule="Screw_the_Dealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-cover" translatesAutoresizingMaskIntoConstraints="NO" id="bSd-BC-XGa">
+                                <rect key="frame" x="51.666666666666657" y="183" width="290" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="Doh-bC-1wE"/>
+                                    <constraint firstAttribute="height" constant="450" id="FNA-la-wMs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screw the Dealer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve8-VK-Y6X">
+                                <rect key="frame" x="71.666666666666686" y="118" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="No7-bW-udp"/>
+                                    <constraint firstAttribute="height" constant="50" id="fMm-FY-K8t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-0S-xob">
+                                <rect key="frame" x="121.66666666666669" y="648" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="H0j-ki-VeM"/>
+                                    <constraint firstAttribute="height" constant="50" id="pza-f9-Fkf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Start">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RN2-CO-nmO" kind="show" id="bVN-Rv-R28"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiT-7h-CS3">
+                                <rect key="frame" x="121.66666666666669" y="713" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EaH-EM-WEV"/>
+                                    <constraint firstAttribute="width" constant="150" id="aTh-BZ-jUY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Rules">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BRC-sq-hTa" kind="show" id="PIa-d8-4S5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ve8-VK-Y6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Jz-nj-dGf"/>
+                            <constraint firstItem="bSd-BC-XGa" firstAttribute="top" secondItem="ve8-VK-Y6X" secondAttribute="bottom" constant="15" id="46J-K8-jD5"/>
+                            <constraint firstItem="aoR-0S-xob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EzK-ND-cpm"/>
+                            <constraint firstItem="aoR-0S-xob" firstAttribute="top" secondItem="bSd-BC-XGa" secondAttribute="bottom" constant="15" id="FVK-Ut-LMM"/>
+                            <constraint firstItem="TiT-7h-CS3" firstAttribute="top" secondItem="aoR-0S-xob" secondAttribute="bottom" constant="15" id="PBy-KL-OSp"/>
+                            <constraint firstItem="TiT-7h-CS3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nza-0o-FxI"/>
+                            <constraint firstItem="bSd-BC-XGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pcs-fD-Ubj"/>
+                            <constraint firstItem="ve8-VK-Y6X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="wtW-oP-hAf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jwI-RX-9GX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-2"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="1MY-HD-QUu">
+            <objects>
+                <viewController id="RN2-CO-nmO" customClass="GameVC" customModule="Screw_the_Dealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ep2-gD-9qc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card-cover" translatesAutoresizingMaskIntoConstraints="NO" id="con-NY-H1h">
+                                <rect key="frame" x="51.666666666666657" y="133" width="290" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="4Sj-ag-3jf"/>
+                                    <constraint firstAttribute="height" constant="450" id="Wa5-Gg-OsS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XB-rf-U2k">
+                                <rect key="frame" x="121.66666666666669" y="598" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="W56-MV-W8h"/>
+                                    <constraint firstAttribute="height" constant="50" id="p2x-GU-C89"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Draw">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="DrawCardAction:" destination="RN2-CO-nmO" eventType="touchUpInside" id="ZMm-b7-Cfy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz3-V3-BS8">
+                                <rect key="frame" x="96.666666666666686" y="663" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TCE-iR-iF3"/>
+                                    <constraint firstAttribute="width" constant="200" id="baI-uC-JqO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Previous Cards">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BAr-pA-qB4" kind="show" id="dwR-i1-yJH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bzm-ho-mc7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0XB-rf-U2k" firstAttribute="top" secondItem="con-NY-H1h" secondAttribute="bottom" constant="15" id="2J3-l7-OEV"/>
+                            <constraint firstItem="Sz3-V3-BS8" firstAttribute="top" secondItem="0XB-rf-U2k" secondAttribute="bottom" constant="15" id="6sd-tn-9Ha"/>
+                            <constraint firstItem="con-NY-H1h" firstAttribute="centerX" secondItem="ep2-gD-9qc" secondAttribute="centerX" id="Q9V-Au-DVW"/>
+                            <constraint firstItem="con-NY-H1h" firstAttribute="top" secondItem="bzm-ho-mc7" secondAttribute="top" constant="30" id="f4Y-Ca-nZt"/>
+                            <constraint firstItem="0XB-rf-U2k" firstAttribute="centerX" secondItem="ep2-gD-9qc" secondAttribute="centerX" id="laF-e4-KFk"/>
+                            <constraint firstItem="Sz3-V3-BS8" firstAttribute="centerX" secondItem="ep2-gD-9qc" secondAttribute="centerX" id="qpJ-P4-Dt7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="iQ8-6A-zfR"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="con-NY-H1h" id="uhm-hV-Zl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4g-Ki-dZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="-209"/>
+        </scene>
+        <!--EndVC-->
+        <scene sceneID="g28-Kb-wCF">
+            <objects>
+                <viewController id="Tjz-Ls-hnC" customClass="EndVC" customModule="Screw_the_Dealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sik-h2-nvk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The game is over. Thanks for playing!!!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60e-6c-fOp">
+                                <rect key="frame" x="8" y="169" width="377" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="eAu-qb-XeO"/>
+                                    <constraint firstAttribute="width" constant="200" id="zjS-bO-MWK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Vg-Ku-Ts7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="60e-6c-fOp" firstAttribute="centerY" secondItem="Sik-h2-nvk" secondAttribute="centerY" id="NNn-hW-U9a"/>
+                            <constraint firstItem="60e-6c-fOp" firstAttribute="centerX" secondItem="Sik-h2-nvk" secondAttribute="centerX" id="pre-RY-ZpD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilh-1g-KlI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2296.9465648854962" y="-364.08450704225356"/>
+        </scene>
+        <!--Previous CardsVC-->
+        <scene sceneID="u68-81-g47">
+            <objects>
+                <viewController id="BAr-pA-qB4" customClass="PreviousCardsVC" customModule="Screw_the_Dealer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aVx-AH-SPx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T4m-ev-yLm">
+                                <rect key="frame" x="46.666666666666657" y="151" width="300" height="550"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Gvv-6m-sqo"/>
+                                    <constraint firstAttribute="height" constant="550" id="LlF-yX-0gk"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" id="opk-zz-jFY">
+                                        <rect key="frame" x="0.0" y="50" width="300" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="opk-zz-jFY" id="XIU-WN-jbW">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zCi-YE-ERa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T4m-ev-yLm" firstAttribute="centerY" secondItem="aVx-AH-SPx" secondAttribute="centerY" id="PcA-Vd-hMN"/>
+                            <constraint firstItem="T4m-ev-yLm" firstAttribute="centerX" secondItem="aVx-AH-SPx" secondAttribute="centerX" id="cYM-hj-Cez"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JTb-h3-oJR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mga-kf-kxm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312" y="300"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xy4-1S-aUQ">
+            <objects>
+                <navigationController id="wmU-ZN-9c8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GE2-M7-Sjk">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rt7-c6-y2G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aa-5I-dU1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-882" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aGA-62-pVk">
+            <objects>
+                <viewController id="BRC-sq-hTa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LO1-xI-WYF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hct-O2-sCD">
+                                <rect key="frame" x="96.666666666666686" y="118" width="200" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hkt-Es-fRQ"/>
+                                    <constraint firstAttribute="height" constant="75" id="yBm-Jt-3k1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGH-dM-FMM">
+                                <rect key="frame" x="51.666666666666657" y="208" width="290" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="FwM-hr-jPp"/>
+                                    <constraint firstAttribute="height" constant="500" id="zk1-J7-pfU"/>
+                                </constraints>
+                                <mutableString key="text">In this game, there is a dealer and a guesser. Only the dealer can see the card in the screen. Guesser has to guess the card that the dealer sees by its value (for example 4, 8 ,J, A).  If the guesser guesses right, the dealer loses that turn and the next person becomes the guesser. If the guesser guesses wrong, the dealer tells if the actual card value is higher or lower. After that the guesser guesses one more time.   If the guesser guesses the card value right on the second time, the dealer loses and the next person becomes the guesser.  If the guesser guesses the card value wrong on the second time, the guesser loses and the next person becomes the guesser.  If the guessers lose three times in a row, the dealer moves to the next person and they start to deal.  Game continues until all the cards are done.   Normally the game is played with minimum 5 people, but it can also be played with a lower number of players and the amount of turns necessary to change the dealer can be decreased.  Enjoy!!!</mutableString>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jao-FA-KbO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hct-O2-sCD" firstAttribute="top" secondItem="Jao-FA-KbO" secondAttribute="top" constant="15" id="B00-Si-U7P"/>
+                            <constraint firstItem="hct-O2-sCD" firstAttribute="centerX" secondItem="LO1-xI-WYF" secondAttribute="centerX" id="Ey7-rQ-vWa"/>
+                            <constraint firstItem="qGH-dM-FMM" firstAttribute="centerX" secondItem="LO1-xI-WYF" secondAttribute="centerX" id="o9M-9A-78o"/>
+                            <constraint firstItem="qGH-dM-FMM" firstAttribute="top" secondItem="hct-O2-sCD" secondAttribute="bottom" constant="15" id="oi2-wO-e9D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nRz-d9-9kD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ez1-MA-VC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="485"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card-cover" width="236" height="330"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

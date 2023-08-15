@@ -15,7 +15,6 @@ class GameVC: UIViewController {
     var currentCard: UIImage = UIImage(named: "card-cover")!
     var currentCardValue: String = "card-cover"
     var prevCards: [String] = []
-    //var defaults = NSUserDefaults.standardUserDefaults
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,6 @@ class GameVC: UIViewController {
         if (deck.isEmpty) {
             performSegue(withIdentifier: "toEndVC", sender: UIButton.self)
         } else {
-            //cardImageView.image = deck.randomElement()
             currentCardValue = deck.randomElement()!
             currentCard = UIImage(named: currentCardValue)!
             cardImageView.image = currentCard
@@ -45,16 +43,14 @@ class GameVC: UIViewController {
             prevCards.append(currentCardValue)
             
             print(prevCards)
-            
-            //defaults.setObject(prevCards, forKey: "prevCards")
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! PreviousCardsVC
+        destVC.passedPrevCards = prevCards
+    }
     
-    
-    /*@IBAction func performUnwindSegueOperation(_ sender: UIStoryboardSegue) {
-    guard let landingVC = sender.source as? PreviousCardsVC else { return }
-        landingVC.prevCards = prevCards
-    } */
+
     
 }

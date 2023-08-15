@@ -9,23 +9,17 @@ import UIKit
 
 class PreviousCardsVC: UIViewController {
     var deck: [Deck] = []
-    var cardValues: [String] = ["A", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
-    var prevCards = GameVC().prevCards
-    //var prevCards : [String] = []
+    var cardValues: [String] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
     var passedPrevCards : [String] = []
-    
-    //let destinationVC = GameVC()
+    var prevCards : [Int] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         
-    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //destinationVC.prevCards = passedPrevCards
-        
-        print(prevCards)
+
         print(passedPrevCards)
+        countValueNumbers()
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -40,10 +34,11 @@ extension PreviousCardsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        if (!prevCards.isEmpty) {
-            cell.textLabel?.text = "\(cardValues[indexPath.row]) = \(prevCards[indexPath.row])"
+        if (!passedPrevCards.isEmpty) {
+            cell.textLabel?.text = "\(cardValues[indexPath.row]) = \(prevCards[indexPath.row]) / 4"
         }
         
         return cell
@@ -51,6 +46,24 @@ extension PreviousCardsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("you tapped me")
+    }
+    
+    func countValueNumbers() {
+        for card in passedPrevCards {
+            for value in cardValues {
+                if (card.prefix(2) == "10"){
+                    prevCards[cardValues.firstIndex(of: String(card.prefix(2)))!] += 1
+                    break
+                } else if (card.prefix(1) == value) {
+                        prevCards[cardValues.firstIndex(of: value)!] += 1
+                        break
+                }
+                    
+                
+                    
+            }
+            print("previous cards: \(prevCards)")
+        }
     }
     
     

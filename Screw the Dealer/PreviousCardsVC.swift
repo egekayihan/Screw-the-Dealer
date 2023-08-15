@@ -62,7 +62,7 @@ extension PreviousCardsVC: UITableViewDelegate, UITableViewDataSource {
                 
                     
             }
-            print("previous cards: \(prevCards)")
+            //print("previous cards: \(prevCards)")
         }
     }
     

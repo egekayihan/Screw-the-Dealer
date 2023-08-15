@@ -123,7 +123,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BAr-pA-qB4" kind="show" id="dwR-i1-yJH"/>
+                                    <segue destination="BAr-pA-qB4" kind="show" identifier="toPrevCards" id="dwR-i1-yJH"/>
                                 </connections>
                             </button>
                         </subviews>

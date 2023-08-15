@@ -42,13 +42,19 @@ class GameVC: UIViewController {
             deck.remove(at: deck.firstIndex(of: currentCardValue)!)
             prevCards.append(currentCardValue)
             
-            print(prevCards)
+            //print(prevCards)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! PreviousCardsVC
-        destVC.passedPrevCards = prevCards
+        if(segue.identifier == "toPrevCards"){
+            let destVC = segue.destination as! PreviousCardsVC
+            destVC.passedPrevCards = prevCards
+        }
+        
+        else if(segue.identifier == "toEndVC"){
+            _ = segue.destination as! EndVC
+        }
     }
     
 

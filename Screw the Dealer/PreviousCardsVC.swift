@@ -39,6 +39,19 @@ extension PreviousCardsVC: UITableViewDelegate, UITableViewDataSource {
         
         if (!passedPrevCards.isEmpty) {
             cell.textLabel?.text = "\(cardValues[indexPath.row]) = \(prevCards[indexPath.row]) / 4"
+                        
+            if((cell.textLabel!.text?.suffix(5) == "4 / 4")){
+                cell.backgroundColor = .green
+            }
+            else if((cell.textLabel!.text?.suffix(5) == "3 / 4")){
+                cell.backgroundColor = .yellow
+            }
+            else if((cell.textLabel!.text?.suffix(5) == "2 / 4")){
+                cell.backgroundColor = .orange
+            }
+            else if((cell.textLabel!.text?.suffix(5) == "1 / 4")){
+                cell.backgroundColor = .red
+            }
         }
         
         return cell

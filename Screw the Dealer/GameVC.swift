@@ -23,6 +23,23 @@ class GameVC: UIViewController {
         
         deck = Deck.allValues
         
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        cardImageView.isUserInteractionEnabled = true
+        cardImageView.addGestureRecognizer(tapGestureRecognizer)
+
+    }
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        
+        if (cardImageView.image != UIImage(named: "card-cover")) {
+            currentCard = UIImage(named: "card-cover")!
+            cardImageView.image = UIImage(named: "card-cover")
+        }
+        else {
+            currentCard = UIImage(named: currentCardValue)!
+            cardImageView.image = currentCard
+        }
     }
 
     @IBAction func PrevCardsAction(segue: UIStoryboardSegue, _ sender: UIButton) {

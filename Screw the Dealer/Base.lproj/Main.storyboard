@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-0S-xob">
-                                <rect key="frame" x="121.66666666666669" y="648" width="150" height="50"/>
+                                <rect key="frame" x="121.66666666666669" y="658" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="H0j-ki-VeM"/>
                                     <constraint firstAttribute="height" constant="50" id="pza-f9-Fkf"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiT-7h-CS3">
-                                <rect key="frame" x="121.66666666666669" y="713" width="150" height="50"/>
+                                <rect key="frame" x="121.66666666666669" y="723" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EaH-EM-WEV"/>
                                     <constraint firstAttribute="width" constant="150" id="aTh-BZ-jUY"/>
@@ -69,7 +69,7 @@
                             <constraint firstItem="ve8-VK-Y6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Jz-nj-dGf"/>
                             <constraint firstItem="bSd-BC-XGa" firstAttribute="top" secondItem="ve8-VK-Y6X" secondAttribute="bottom" constant="15" id="46J-K8-jD5"/>
                             <constraint firstItem="aoR-0S-xob" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EzK-ND-cpm"/>
-                            <constraint firstItem="aoR-0S-xob" firstAttribute="top" secondItem="bSd-BC-XGa" secondAttribute="bottom" constant="15" id="FVK-Ut-LMM"/>
+                            <constraint firstItem="aoR-0S-xob" firstAttribute="top" secondItem="bSd-BC-XGa" secondAttribute="bottom" constant="25" id="FVK-Ut-LMM"/>
                             <constraint firstItem="TiT-7h-CS3" firstAttribute="top" secondItem="aoR-0S-xob" secondAttribute="bottom" constant="15" id="PBy-KL-OSp"/>
                             <constraint firstItem="TiT-7h-CS3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nza-0o-FxI"/>
                             <constraint firstItem="bSd-BC-XGa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pcs-fD-Ubj"/>
@@ -99,7 +99,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XB-rf-U2k">
-                                <rect key="frame" x="121.66666666666669" y="598" width="150" height="50"/>
+                                <rect key="frame" x="121.66666666666669" y="608" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="W56-MV-W8h"/>
                                     <constraint firstAttribute="height" constant="50" id="p2x-GU-C89"/>
@@ -113,7 +113,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sz3-V3-BS8">
-                                <rect key="frame" x="96.666666666666686" y="663" width="200" height="50"/>
+                                <rect key="frame" x="96.666666666666686" y="673" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="TCE-iR-iF3"/>
                                     <constraint firstAttribute="width" constant="200" id="baI-uC-JqO"/>
@@ -130,7 +130,7 @@
                         <viewLayoutGuide key="safeArea" id="bzm-ho-mc7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0XB-rf-U2k" firstAttribute="top" secondItem="con-NY-H1h" secondAttribute="bottom" constant="15" id="2J3-l7-OEV"/>
+                            <constraint firstItem="0XB-rf-U2k" firstAttribute="top" secondItem="con-NY-H1h" secondAttribute="bottom" constant="25" id="2J3-l7-OEV"/>
                             <constraint firstItem="Sz3-V3-BS8" firstAttribute="top" secondItem="0XB-rf-U2k" secondAttribute="bottom" constant="15" id="6sd-tn-9Ha"/>
                             <constraint firstItem="con-NY-H1h" firstAttribute="centerX" secondItem="ep2-gD-9qc" secondAttribute="centerX" id="Q9V-Au-DVW"/>
                             <constraint firstItem="con-NY-H1h" firstAttribute="top" secondItem="bzm-ho-mc7" secondAttribute="top" constant="30" id="f4Y-Ca-nZt"/>
@@ -284,7 +284,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="card-cover" width="236" height="330"/>
+        <image name="card-cover" width="321" height="481"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -162,7 +162,7 @@
                                     <constraint firstAttribute="height" constant="400" id="eAu-qb-XeO"/>
                                     <constraint firstAttribute="width" constant="180" id="zjS-bO-MWK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

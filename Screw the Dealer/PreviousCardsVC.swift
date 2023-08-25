@@ -9,7 +9,7 @@ import UIKit
 
 class PreviousCardsVC: UIViewController {
     var deck: [Deck] = []
-    var cardValues: [String] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+    var cardValues: [String] = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
     var passedPrevCards : [String] = []
     var prevCards : [Int] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         
@@ -39,6 +39,7 @@ extension PreviousCardsVC: UITableViewDelegate, UITableViewDataSource {
         
         if (!passedPrevCards.isEmpty) {
             cell.textLabel?.text = "\(cardValues[indexPath.row]) = \(prevCards[indexPath.row]) / 4"
+            cell.textLabel?.textColor = .black
                         
             if((cell.textLabel!.text?.suffix(5) == "4 / 4")){
                 cell.backgroundColor = .green

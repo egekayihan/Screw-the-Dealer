@@ -31,6 +31,12 @@ class GameVC: UIViewController {
     }
     
     @IBAction func DrawCardAction(_ sender: Any) {
+        //print(currentCardValue)
+        
+        if(currentCardValue != "card-cover" && !deck.isEmpty){
+            deck.remove(at: deck.firstIndex(of: currentCardValue)!)
+            prevCards.append(currentCardValue)
+        }
         
         if (deck.isEmpty) {
             performSegue(withIdentifier: "toEndVC", sender: UIButton.self)
@@ -39,8 +45,8 @@ class GameVC: UIViewController {
             currentCard = UIImage(named: currentCardValue)!
             cardImageView.image = currentCard
             
-            deck.remove(at: deck.firstIndex(of: currentCardValue)!)
-            prevCards.append(currentCardValue)
+            //deck.remove(at: deck.firstIndex(of: currentCardValue)!)
+            //prevCards.append(currentCardValue)
             
             //print(prevCards)
         }

@@ -62,6 +62,9 @@ class GameVC: UIViewController {
             currentCard = UIImage(named: currentCardValue)!
             cardImageView.image = currentCard
             
+            cardImageView.layer.cornerRadius = 15
+            cardImageView.layer.masksToBounds = true
+            
             //deck.remove(at: deck.firstIndex(of: currentCardValue)!)
             //prevCards.append(currentCardValue)
             

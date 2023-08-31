@@ -158,10 +158,6 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The game is over.   Thanks for playing!!!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60e-6c-fOp">
                                 <rect key="frame" x="8" y="169" width="377" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="eAu-qb-XeO"/>
-                                    <constraint firstAttribute="width" constant="180" id="zjS-bO-MWK"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
